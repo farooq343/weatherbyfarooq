@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather by farooq</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ <div class="today">
+    <div class="search-container">
+        <input type="text"  id="cityInput" class="search-input" placeholder="Enter city name">
+        <button type="submit" onclick="getWeather()" class="search-btn">
+          <img src="./images/search.png" alt="Search">
+        </button>
+        
+ </div>
+ <p class="hiddenr" id="msgs">please wiat . . . . .</p>
+ <div class="hidden" id="msg">
+   
+    <p>Uh-oh! It seems like we can't find the location <p>you're looking for. Please check your spelling</p> or try another place.</p>
+</div>
+<div class="hidden" id="all">
+
+
+ <div class="mianimg">
+    <img class="weather-icon" src="./images/clouds.png" >
+ </div>
+
+ <div class="icondiscription">
+    <p class="weather-description">cloudly</p>
+  </div>
+ <div class="tem">
+    <h1  class="current-temperature">3°c</h1>
+  </div>
+  <div class="upanddown">
+    <div class="up">
+   
+    <p  class="high-temperature">28°c</p>
+</div>
+  <div class="down">
+
+    <p class="low-temperature">2°c</p>
+   </div>
+ 
+
+
+ </div>
+ <div class="cityname">
+    <p class="city-name">manshera</p>
+ </div>
+<div class="detailoftoday">
+    <div class="humidity">
+        <img src="./images/humidity.png" alt="">
+        <p class="hum">90%</p>
+        <p class="parahum">Humidity</p>
+    </div>
+    <div class="windspeed">
+        <img src="./images/wind.png" alt="">
+        <p class="wind">2.68 km/h</p>
+        <p class="windpara">windspeed</p>
+    </div>
+   
+</div>
+
+</div>
+</div>
+ <!-- today div close herer -->
+ <div class="upcoming hidden" id="upcome">
+    <div class="one">
+        <p class="update"></p>
+        <img src="" alt="" class="weather-icon">
+        <p class="updiscription"></p>
+        <p class="uphigh"></p>
+        <p class="uplow"></p>
+    </div>
+    <div class="two">
+        <p class="update"></p>
+        <img src="" alt="" class="weather-icon">
+        <p class="updiscription"></p>
+        <p class="uphigh"></p>
+        <p class="uplow"></p>
+    </div>
+    <div class="three">
+        <p class="update"></p>
+        <img src="" alt="" class="weather-icon">
+        <p class="updiscription"></p>
+        <p class="uphigh"></p>
+        <p class="uplow"></p>
+    </div>
+    <div class="four">
+        <p class="update"></p>
+        <img src="" alt="" class="weather-icon">
+        <p class="updiscription"></p>
+        <p class="uphigh"></p>
+        <p class="uplow"></p>
+    </div>
+
+ </div>
+ <footer>
+    <p>weather app by "farooq"</p>
+ </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
